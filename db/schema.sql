@@ -1,5 +1,0 @@
--- DROP DATABASE
-DROP DATABASE IF EXISTS flowermoontea_db;
-
--- CREATE DATABASE
-CREATE DATABASE flowermoontea_db;
