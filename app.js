@@ -8,7 +8,6 @@ const helpers = require('./utils/helpers');
 
 const { homeRoutes, apiRoutes } = require('./routes'); // Aggregated route imports
 
-
 const app = express();
 const PORT = process.env.PORT || 3001;
 
