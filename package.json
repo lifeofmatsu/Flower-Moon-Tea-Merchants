@@ -1,13 +1,16 @@
 {
-  "name": "mirasleaf-blog-and-tea",
+  "name": "miras-leaf",
   "version": "1.0.0",
-  "description": "find . -maxdepth 1 -type f ! -name 'index.js' ! -name 'homeCtrl.js' -exec mv {} api/ \\;",
-  "main": "index.js",
+  "description": "Welcome to Mira's Leaf! We are a tea-loving community that shares authentic looseleaf teas and discusses all kinds of fun tea topics on our blog!",
+  "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server.js --ignore client",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jus Ferrell",
   "license": "ISC",
   "dependencies": {
     "@apollo/client": "^3.10.4",
